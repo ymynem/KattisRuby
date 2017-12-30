@@ -4,7 +4,7 @@ def findWeekDay()
   yearDay = getYearDay(monthDay, month)
 
 
-  weekDay = (2 + yearDay) % 8
+  weekDay = (2 + yearDay) % 7 + 1
   case weekDay
     when 1
       puts "Monday"
