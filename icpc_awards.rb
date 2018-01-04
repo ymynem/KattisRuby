@@ -9,13 +9,13 @@ def givePrizesToWinnersOfICPCAwards()
 
     numberOfTeams -= 1
   end
-  count =0
-  h.each do | key, value |
-      if count < 12
-        puts "#{key} #{value}"
-      end
-        count += 1
-end
+  count = 0
+  h.each do |key, value|
+    if count < 12
+      puts "#{key} #{value}"
+    end
+    count += 1
+  end
 
 end
 

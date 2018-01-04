@@ -33,15 +33,15 @@ def calculate_cost_to_sow_all_of_the_lawns()
   cost = gets.chomp.to_f # the cost of seed to sow one square metre of lawn.
   number_of_lawns = gets.chomp.to_f # the number of lawns to sow
   # L lines, each containing two positive real numbers: w_i  the width of the lawn, and l_i the length of the lawn
-  answer = 0;
+  answer = 0
   while number_of_lawns.to_i > 0
     descr = gets.chomp
     width, length = descr.split.map(&:to_f)
-    answer = answer + (cost * width * length)
+    answer = answer + (cost * width.to_f * length.to_f)
     number_of_lawns -= 1
   end
   puts answer
 end
 
 
-readFunc
+calculate_cost_to_sow_all_of_the_lawns
