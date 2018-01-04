@@ -1,3 +1,6 @@
+# This problem is not solved yet. I am stuck thinking wrong somewhere. Will get back to this
+# one later
+
 def patuljci()
   nrOfDwarfs = 9
   dwarfHatNumbers = []
